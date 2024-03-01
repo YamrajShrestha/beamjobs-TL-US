@@ -19,11 +19,11 @@ header {
   line-height: 60px;
 }
 
-button {
+.my-btn {
   background-color: var(--brand-color) !important;
 }
 
-button:is(:hover, :focus-within) {
+.my-btn:is(:hover, :focus-within) {
   background-color: #1c1c78 !important;
 }
 
@@ -80,4 +80,65 @@ nav a:is(:hover, :focus-within) {
 /* ##hero-section  */
 .hero-section {
   background-color: #1d1e78;
+  height: 50vh;
+}
+
+/* ##cta  */
+.popup {
+  width: 432px;
+  height: 302px;
+}
+
+.popup::before {
+  content: "";
+  background-image: url(/popup/img/beam_bg2.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.05;
+}
+
+.popup .wavy-top {
+  background-color: #f1f6ff;
+  border-bottom: 4px solid #ffb400;
+}
+
+.title h1 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 22px;
+}
+
+.title h1 span {
+  color: #1d1e78;
+}
+
+.content p {
+  width: 314px;
+  height: 44px;
+  font-family: Montserrat;
+}
+
+input {
+  width: 280px;
+  height: 47px;
+  font-family: Montserrat;
+  border-radius: 15px;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+}
+
+.input-wrapper button {
+  height: 47px;
+  border-radius: 15px;
+  border: 2px solid #1d1e78;
+  font-family: Montserrat;
+}
+
+.bi-hand-index-thumb-fill {
+  color: #ffb400;
 }
